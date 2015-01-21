@@ -12,4 +12,7 @@ class CardgateFixtures
   REFUND_SUCCESSFUL = '{"refund":{"transaction_id":2307831}}'
   REFUND_UNSUCCESSFUL = '{"error":{"message":"Refund amount exceeded transaction amount.", "code":"TransactionRefundAmount- Exceeded", "resource":"/rest/v1/ideal/refund/"}}'
 
+  RECURRING_SUCCESSFUL = '{"recurring": { "execute_date": "2014-06-05", "billing_option": 52, "mandate_id": "T123456", "mandate_date": "2014-05-22 14:26:34", "recipient_name": "Escrow CURO Payments", "recipient_bic": "INGBNL2A", "recipient_iban": "NL41INGB0687547407", "transaction_id": 123457 }}'
+  RECURRING_UNSUCCESSFUL = '{"error":{"message":"We encountered an internal error. Please try again later.", "code":"InternalServerError", "resource":"/rest/v1/ideal/payment/"}}'
+
 end

@@ -4,7 +4,7 @@ module Cardgate
 
     class Payment < Cardgate::Payment
 
-      attr_accessor :issuer_id
+      attr_accessor :issuer_id, :recurring
 
       def provider
         'ideal'
@@ -13,7 +13,8 @@ module Cardgate
       def payment_params
         {
           payment: {
-            issuer_id: @issuer_id
+            issuer_id: @issuer_id,
+            recurring: @recurring
           }
         }
       end

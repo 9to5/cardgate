@@ -10,6 +10,7 @@ require 'cardgate/response'
 require 'cardgate/transaction'
 require 'cardgate/transactions'
 require 'cardgate/payment'
+require 'cardgate/recurring'
 require 'cardgate/refund'
 require 'cardgate/version'
 
